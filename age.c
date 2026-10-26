@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int age, score;
+    float  income;
+    printf("Enter age, monthly income, credit score: ");
+    scanf("%d %f %d", &age, &income, &score);
+
+    if (age < 21 || age > 60) {
+        printf("Loan rejected: age not in 21 to 60");
+    } else if (income < 25000) {
+        printf("Loan rejected: income below Rs25,000");
+    } else if (score < 700) {
+        printf("Loan rejected: credit score below 700");
+    } else {
+        printf("Loan approved");
+    }
+    return 0;
+}
